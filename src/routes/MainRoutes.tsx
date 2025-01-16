@@ -11,7 +11,7 @@ const MainRoutes = {
   element: <DefaultLayout />,
   children: [
     {
-      path: 'dashboard',
+      path: '',
       element: <>
         <PageTitle title="Dashboard" />
         <DashboardPage />

@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Logo from '../../assets/images/logo/logo.svg';
 import pages from '../../menu-items/pages.ts';
-import { toggleSidebar, setSidebarExpanded, selectSidebarState } from '../../store/slices/globalSlice.ts';
+import { toggleSidebar, selectSidebarState } from '../../store/slices/globalSlice.ts';
 
 const Sidebar = () => {
   const location = useLocation();
@@ -11,7 +11,6 @@ const Sidebar = () => {
 
   const dispatch = useDispatch();
   const sidebarOpen = useSelector(selectSidebarState);
-  const sidebarExpanded = useSelector((state: any) => state.sidebar.sidebarExpanded);
 
   const trigger = useRef<HTMLDivElement | null>(null);
   const sidebar = useRef<HTMLButtonElement | null>(null);
@@ -77,7 +76,7 @@ const Sidebar = () => {
                   >
                     {icon && (
                       <img
-                        src={icon}
+                        src={icon as any}
                         width={28}
                         height={28}
                         alt="Item"
