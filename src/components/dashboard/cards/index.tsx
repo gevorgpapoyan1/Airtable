@@ -24,7 +24,7 @@ const MyCards = ({isCardPage = false}: { isCardPage: boolean }) => {
           <Link
             to="/credit-card"
           >
-            {!isCardPage && <h2 className="text-right text-[17px] font-semibold text-third">See All</h2>}
+            {!isCardPage && <h2 className="text-right text-[17px] hover:text-primary font-semibold text-third">See All</h2>}
           </Link>
         </div>
 

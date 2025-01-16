@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import userOne from "../../../../assets/images/users/user-one.png";
 import userTwo from "../../../../assets/images/users/user-two.png";
 import userThree from "../../../../assets/images/users/user-three.png";
@@ -89,7 +89,7 @@ const QuickTransfer = () => {
           </div>
 
           <span
-            className={`bg-black text-sm flex gap-3 items-center rounded-25 justify-center
+            className={`bg-black text-sm hover:bg-primary flex gap-3 items-center rounded-25 justify-center
              w-1/2 h-full transition-all duration-150 ease-linear rounded-full absolute left-1 text-white font-medium 
             ${isEnabled ? "left-1 text-white font-semibold bg-black" : "left-1/2 -ml-1 text-gray-800"}`}
           >

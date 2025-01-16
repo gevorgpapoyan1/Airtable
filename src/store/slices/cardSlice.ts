@@ -39,11 +39,11 @@ const cardSlice = createSlice({
       .addCase(loadCardDetails.pending, (state: any) => {
         state.loading = true;
       })
-      .addCase(loadCardDetails.fulfilled, (state, action: PayloadAction<Card[]>) => {
+      .addCase(loadCardDetails.fulfilled, (state: any, action: PayloadAction<Card[]>) => {
         state.loading = false;
         state.cardDetails = action.payload;
       })
-      .addCase(loadCardDetails.rejected, (state, action: PayloadAction<{ error: string }>) => {
+      .addCase(loadCardDetails.rejected, (state: any, action: PayloadAction<{ error: string }>) => {
         state.loading = false;
         state.error = action.error.message || 'An error occurred';
       });

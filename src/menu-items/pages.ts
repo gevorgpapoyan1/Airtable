@@ -16,7 +16,7 @@ const pages = {
       id: 'dashboard',
       title: 'Dashboard',
       type: 'item',
-      url: '/dashboard',
+      url: '/',
       icon: DashboardIcon
     },
     {

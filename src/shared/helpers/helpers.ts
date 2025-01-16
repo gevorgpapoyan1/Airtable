@@ -11,7 +11,7 @@ export function encryptCardNumber(cardNumber: string): string {
 }
 
 const routeNames: { [key: string]: string } = {
-  '/dashboard': 'Overview',
+  '/': 'Overview',
   '/credit-card': "My Cards"
 };
 
