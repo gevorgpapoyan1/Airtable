@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter font-normal text-base text-body bg-whiten relative z-1;
+    @apply font-lato font-normal text-base text-body bg-whiten relative z-1;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.apexcharts-legend {
+  right: 0px !important;
+  top: 0px !important;
+}
+
+.apexcharts-legend-series {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+.apexcharts-legend-marker {
+  border-radius: 50% !important;
+}
+
+.apexcharts-legend-text {
+  color: #718EBF !important;
+}
+
+.apexcharts-toolbar {
+  display: none !important;
+}
